@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: snow;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+
+    margin: auto;
+
+    background-color: gray;
+    padding: 50px;
+    width: 450px;
+}
+
+.search {
+
+}
+
+.search-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.search-list li {
+    width: 100%;
+    padding: 0;
+    border: 2px solid black;
+}
+
+.search-button {
+    width: 100%;
+    height: 100%;
+    background-color: lightgray;
+    text-align: left;
+    font-size: 25px;
+    border: 0;
+    padding: 0 8px;
+}
+
+.search-button:active {
+    background-color: blue;
+}
+
+.input {
+    width: 100%;
+    height: 70px;
+    border: none;
+    font-size: 35px;
+    padding: 4px 8px;
+}
+
+.input:focus {
+    outline: none;
+}
+
+.saved-reps {
+    width: 100%;
+    margin-top: 35px;
+}
+
+.saved-rep {
+    position: relative;
+    width: 100%;
+    height: 70px;
+    background-color: hotpink;
+    padding: 4px 8px;
+    border: 1px solid black;
+}
+
+.card-removeButton {
+    position: absolute;
+    top: 19px;
+    right: 20px;
+    width: 32px;
+    height: 32px;
+    border: 0;
+    background-color: inherit;
+}
+
+.card-removeButton:hover {
+    opacity: 0.7;
+}
+
+.card-removeButton::before, .card-removeButton::after {
+    position: absolute;
+    top: 0;
+    content: ' ';
+    height: 33px;
+    width: 2px;
+    background-color: red;
+}
+
+.card-removeButton::before {
+    transform: rotate(45deg);
+}
+
+.card-removeButton::after {
+    transform: rotate(-45deg);
+}
